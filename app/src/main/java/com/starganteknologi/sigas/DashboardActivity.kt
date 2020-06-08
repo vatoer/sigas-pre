@@ -10,11 +10,11 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.starganteknologi.sigas.datamanager.User
 import com.starganteknologi.sigas.datamanager.UserSharedDataManager
-import kotlin.math.log
 
 class DashboardActivity : AppCompatActivity() {
 
     private val userSharedDataManager: UserSharedDataManager = UserSharedDataManager(this)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +34,8 @@ class DashboardActivity : AppCompatActivity() {
 
         val user:User = userSharedDataManager.readUser()
         Log.i("tag",user.plainPassword)
+
+
 
     }
 }

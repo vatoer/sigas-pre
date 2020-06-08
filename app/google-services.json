@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "437411559996",
+    "firebase_url": "https://sigas-simposium.firebaseio.com",
+    "project_id": "sigas-simposium",
+    "storage_bucket": "sigas-simposium.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437411559996:android:9b4787c252cf5fdcba2139",
+        "android_client_info": {
+          "package_name": "com.starganteknologi.sigas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437411559996-2dqaf7dur6tqac7o7n0bb2lk8ot1gqaa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.starganteknologi.sigas",
+            "certificate_hash": "be731f86f37c65592ba04e2b42436a6b907239d8"
+          }
+        },
+        {
+          "client_id": "437411559996-kkki7h8e89kgv3oair3rj2ldgh0i1elr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI-6YwGyvpOv5xoPAdOxpSKIuW23WigQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437411559996-kkki7h8e89kgv3oair3rj2ldgh0i1elr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

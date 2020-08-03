@@ -4,9 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import androidx.recyclerview.widget.RecyclerView
+//import androidx.recyclerview.widget.RecyclerView
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.iid.FirebaseInstanceId
+//import com.jakewharton.threetenabp.AndroidThreeTen
 import com.starganteknologi.sigas.datamanager.User
 import com.starganteknologi.sigas.datamanager.UserSharedDataManager
 import com.starganteknologi.sigas.repository.LoginRepo
@@ -17,6 +18,7 @@ import com.starganteknologi.sigas.service.NetworkService
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.alert
 import org.jetbrains.anko.startActivity
+import java.time.LocalDateTime
 
 class MainActivity : AppCompatActivity(), LoginView {
 
@@ -25,7 +27,9 @@ class MainActivity : AppCompatActivity(), LoginView {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        //AndroidThreeTen.init(this);
 
+        textDate.text = LocalDateTime.now().toString()
         btnLogin.setOnClickListener{
             val tag = javaClass.simpleName
             val email = inputEmail.text.toString()
@@ -43,11 +47,11 @@ class MainActivity : AppCompatActivity(), LoginView {
             loginRepo.login(email,password);
             Log.i(tag,"Login")
             Toast.makeText(this, email , Toast.LENGTH_SHORT).show()
+
+
         }
-
-
-
     }
+
 
     override fun onSuccessLogin(userId: Int?, jwtToken: String?, msg: String?) {
 
